@@ -22,7 +22,8 @@ module.exports = function (grunt)
 		sass: '%{{class}}\n\tbackground-image: url("{{data}}")',
     sass_no: '.{{class}}\n\tbackground-image: url("{{data}}")',
 		default: '.{{class}} {\n\tbackground-image: url("{{data}}");\n}',
-		variables: '${{class}}: "{{data}}";'
+		variables: '${{class}}: "{{data}}";',
+    js: 'exports[\'{{class}}\'] = "{{data}}";'
 	};
 
 	// filesize is only critical for IE8
